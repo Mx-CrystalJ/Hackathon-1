@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <!--Nav Bar-->
 
     <!--Heading-->
+    <h1 class="heading"></h1>
+    <img class="logo" src="assets/images/movie-theater.png" alt="logo"> Movie Quiz
+    </h1>
 
 
     <!--Game-->
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question-container">
+            <p id="question">Question will appear here</p>
+            <div id="answer-buttons" class="button-container">
+                <button class="answer-btn" onclick="checkAnswer(0)">Answer 1</button>
+                <button class="answer-btn" onclick="checkAnswer(1)">Answer 2</button>
+                <button class="answer-btn" onclick="checkAnswer(2)">Answer 3</button>
+            </div>
+        </div>
+        <p id="result-message"></p>
+        <button id="next-question-btn" onclick="nextQuestion()">Next Question</button>
+    </div>
 
     <!--Hot to play link-->
 
     <!--Scripts-->
-    <script src="assets/js/script.js"></script> 
+    <script src="assets/js/script.js"></script>
 
     <!--Footer-->
-    
+
 </body>
+
 </html>
