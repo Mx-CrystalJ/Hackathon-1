@@ -10,23 +10,41 @@ body {
 h1 {
     font-size: xx-large;
     font-family: 'Sour Gummy';
+    text-align: center;
+    color: #F1F1F1;
 
 }
 
 p {
     font-size: small;
     font-family: Roboto;
+    text-align: center;
+    color: #F1F1F1;
+}
+
+#start-quiz-btn {
+    display: flex;
+    justify-content: center;
 }
 
 /* ------------- General styles */
 .header img {
     float: left;
+    display: inline-block;
     width: 50px;
     height: 50px;
 }
 
+.container-fluid {
+    padding-left: 60px;
+}
+.header {
+    position: fixed;
+}
+
 
 nav {
+    position: relative;
     font-size: small;
     font-family: 'Sour Gummy';
 }
@@ -34,16 +52,18 @@ nav {
 
 /* --------- Quiz styles */
 
-#welcome-container {
-    background-image: url(/assets/images/10070310.jpg);
-    height: 100px;
-    width: 100px;
+.welcome-container {
+    background-image: url(/assets/images/old-frame-4583939_1920.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#quiz-container {
-    background-image: url(/assets/images/old-frame-4583939_1920.png);
-    height: 100px;
-    width: 100px;
+.quiz-container {
+    background-image: url(/assets/images/10070310.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .question-area {
@@ -62,7 +82,15 @@ nav {
 }
 
 #github img {
-    float: left;
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    height: 50px; 
+    /* Adjust as needed */ 
+    background-color: #F1F1F1; 
 }
