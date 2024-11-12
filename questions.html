@@ -19,6 +19,7 @@
 
     <!--CSS Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Document</title>
 </head>
 
@@ -26,7 +27,6 @@
     <!--Nav Bar and Heading -->
     <header>
         <div class="header">
-            <img src="assets/images/movie-theater.png" alt="logo" class="logo">
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -50,14 +50,26 @@
         </nav>
     </header>
 
+    <!--Game-->
     <main>
-        <div id="welcome-container">
-            <h1>Welcome to the Quiz!</h1>
-            <p>Click below to start the quiz.</p>
-            <!-- Link to the questions page -->
-            <a href="questions.html" id="start-quiz-btn">Start Quiz</a>
+        <div id="quiz-container">
+            <h1>Quiz</h1>
+            <div id="question-container">
+                <p id="question">Question will appear here</p>
+                <div id="answer-buttons" class="button-container">
+                    <button class="answer-btn" onclick="checkAnswer(0)">Answer 1</button>
+                    <button class="answer-btn" onclick="checkAnswer(1)">Answer 2</button>
+                    <button class="answer-btn" onclick="checkAnswer(2)">Answer 3</button>
+                </div>
+            </div>
+            <p id="result-message"></p>
+            <button id="next-question-btn" onclick="nextQuestion()">Next Question</button>
         </div>
 
+        <div class="score-area">
+            <p class="scores">Correct Answers <span id="score">0</span></p>
+            <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        </div>
     </main>
 
     <!--Hot to play link-->
