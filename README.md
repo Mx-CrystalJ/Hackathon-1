@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The Movie Quiz represents the first hackathon collaborative project given to us for the Code Institute Full Stack Software Developer Bootcamp. 
+The Movie Quiz represents the first hackathon collaborative project given to us for the Code Institute Full Stack Software Developer Bootcamp. Us refers to the collaborators, Caprice, Cristian, Crystal and Yusuf 
 
 Live project: <a href="" target="_blank">Movie Quiz</a>
 
@@ -108,124 +108,68 @@ Two  fonts were selected for the project, and implemented via [Google Fonts](htt
 These wireframes were created using [Balsamiq](https://balsamiq.com/) to highlight key features in the layout that work to guide the user experience. While using a [Bootstrap](https://getbootstrap.com/) framework with its available components that allow for ease of navigation and structured content with a fully responsive design.
 
 **Mobile Wireframe**
-![Mobile Wireframe]()
+![Mobile Wireframe](assets/documentation/mobile.jpg)
 
 **Tablet Wireframe**
-![Tablet Wireframe]()
+![Tablet Wireframe](assets/documentation/tablet.jpg)
 
 **Desktop Wireframes**
-![Desktop Wireframe 1] ()
-
+![Desktop Wireframe 1](assets/documentation/Screenshot%202024-11-13%20164344.jpg) 
+![Desktop Wireframe 2](assets/documentation/Screenshot%202024-11-13%20164410.jpg) 
+![Desktop Wireframe 3](assets/documentation/Screenshot%202024-11-13%20164430.jpg) 
+![Desktop Wireframe 4](assets/documentation/Screenshot%202024-11-13%20164453.jpg) 
 
 <hr>
 <p align="right"><a href="moviequiz">Back To Top</a></p>
 
 ## Imagery
 
-The image I selected became a key influence and neccessary in the design of the overall project, including the naming, branding and metaphors.
+The visuals for the movie quiz project combine elements that evoke a cinematic experience. The first image features an elegant, vintage-style decorative frame with intricate corner details, set against a black background. This frame suggests a classic or timeless atmosphere, possibly hinting at a traditional movie aesthetic or offering a sense of mystery and anticipation.
 
-With the requirements of the end user, I found an image that would fulfil the specific criteria;
-- Thematic link to mental health that could be used for branding purposes
-- Identifiable, appealing, and calming to the target audiences
-- Promotes inclusivity and equality by being without a specfic target
-- Variety for use and relevance in the project
-- Follows color research to maintain user well-being
-
-After looking through nature inspired images, I choose the mountains and lake during sunset.
-
-This selection fulfilled the criteria set out and offered further inspiration.
-- It maintains a consistent theme and works well as a brand image and name
-- Usage of the same image easily identifiable and has a calming minfullness appeal
-- Adopting research that has been applied to mental health, the use of nature adopts universal representation and inclusivity
-- The image follows color requirements, but also informed adjustments to the color palette
-
-![Mountain Image](/assets/images/73bfb902-44a1-4f97-b790-0d6099074d69.jpg)
+The second image takes inspiration from the interior of a movie theatre, showing a row of plush red cinema seats arranged in front of a blank screen. The dark, rich tones of the theater and the neutral screen create a feeling of being in the midst of a cinematic experience, setting the stage for the quiz participants to engage in the world of films.
 
 <hr>
-<p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
+<p align="right"><a href="#moviequiz">Back To Top</a></p>
 
 ## Features
 
 ### General Features
 
-The criteria requested that the page consists of sectioned information with links, resources and other elements that contribute to user experience.
+The criteria requested that we create and design an interactive Front-End web application using HTML, CSS and JavaScript based on the principles of user experience design, accessibility, and responsivity.
 
-When coding the project, receiving feedback and implementing the [Bootstrap Framework](https://getbootstrap.com/docs/5.3/getting-started/introduction/) the features and design changed from the original wireframe and colour scheme.
+When coding the project, receiving feedback, the features and design changed from the original wireframes to be more interacctive.
 
 Adjustments:
-
-- Adding Grid to page instead of just resources.<br>
-This was done to provide the user an easy navigation through sections they would most likely be seeking to interact with when needing immediate help.
-
-- Changing the Navbar to the top of the page instead of under the Slider section.<br>
-This decision was made as a result of personal reflection and user feedback to provide a more enjoyable user experience because the hero section doesn't include the sites name and when viewed on an iPad or mobile device the section takes the users attention.
+- added javascript to include features such as questions, scores and a timer.
 
 #### Navigation and Carousel Section
-
-I chose to use a bold and welcoming slider section for the start of the page using the [Bootstrap Carousel](https://getbootstrap.com/docs/5.3/components/carousel/)
-
-This gives a clear indication of the content by using a Carousel Jumbotron to show positive quotes as well as imagery that links to the brand and identity of the organisation.
-
-The navigation bar is a Bootstrap component that allows for easy navigation around the site using a familiar method for a positive user experience that is resposive.
-
-![Navigation & Carousel Desktop](/documentation/images/Desktop%20Hero%20+%20Nav.png)
-![Navigation & Carousel Mobile/Tablet](/documentation/images/Phone%20+%20Tablet%20Hero%20+%20Nav.png)
-
-#### Bootstrap Cards
-
-I chose the [Bootstrap Card](https://getbootstrap.com/docs/5.3/components/card/) feature for the Tips + Resources content of the page as this allowed for a clean organisation of the information I wanted for the main content.
-
-Within these sections I have given additional resources and links via buttons for ease.
-
-![Tips Cards](/documentation/images/Tips%20+%20Common%20Issues%20Card.png)
-![Resources Cards](/documentation/images/Resources%20Card.png)
+We chose to keep the navbar simple as it isn't a main feature of this project.
 
 #### Links and Buttons
 
-Although the page used a variety of colours for buttons to adhere to contrast requirements, each link and button does maintain a level of consistency.
+We stuck to one colour for links and buttons based on the website background, sticking to either black or white for consistency.
 
 <hr>
-<p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
+<p align="right"><a href="#moviequiz">Back To Top</a></p>
 
 ### Responsive Design
 
-Using the [Bootstrap Framework](https://getbootstrap.com/docs/5.3/getting-started/introduction/) grid allowed for an implementation that is responsive but additional CSS + media queries were needed for presentation.
 
-Though it took some experimentation and troubleshooting, I have been able to create a page that is fully responsive to modern standards.
-
-As a result of my debugging within Dev Tools and help from other students to identify and resolve responsiveness issues I believe I have a better understanding of how to use Bootstrap for future projects.
-
-[Am I Responsive](https://ui.dev/amiresponsive?url=https://mx-crystalj.github.io/IP1-The-Mental-Mountain-Hub/)<br>
-![Am I Responsive](/documentation/images/Responsive%20Full.png)<br>
-![Mobile](/documentation/images/Responsive%20Mobile.png)<br>
-![ipad Mini](/documentation/images/Responsive%20iPad.png)<br>
-![Dektop](/documentation/images/Responsive%20Desktop.png)<br>
 
 <hr>
-<p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
+<p align="right"><a href="#moviequiz">Back To Top</a></p>
 
 
 ## Built With
 
 ### Technologies and Languages
-![Static Badge](https://img.shields.io/badge/HTML5-Language-grey?logo=html5&logoColor=%23ffffff&color=%23E34F26)
-![Static Badge](https://img.shields.io/badge/CSS3-Language-grey?logo=css3&logoColor=%23ffffff&color=%231572B6)
 
-<a href="https://git-scm.com/" target=_blank_>![Static Badge](https://img.shields.io/badge/Git-v2.46.2-grey?logo=git&logoColor=%23ffffff&color=%23F05032)</a>
-<a href="https://github.com/" target="_blank">![Static Badge](https://img.shields.io/badge/GitHub-Repo_Hosting-white?logo=github&logoColor=%23ffffff&color=%23181717)</a>
-<a href="https://www.gitpod.io/" target="_blank">![Static Badge](https://img.shields.io/badge/Gitpod-IDE-white?logo=gitpod&logoColor=%23ffffff&color=%23FFAE33)</a>
 
 ### Libraries and Frameworks
-<a href="https://getbootstrap.com/" target="_blank">![Static Badge](https://img.shields.io/badge/Bootstrap-v5.3.3-grey?logo=bootstrap&logoColor=%23ffffff&color=%237952B3)</a>
-<a href="#" target="_blank">![Static Badge](https://img.shields.io/badge/Font_Awesome-Icons-grey?logo=fontawesome&logoColor=%23ffffff&color=%23538DD7)</a>
-<a href="#" target="_blank">![Static Badge](https://img.shields.io/badge/Google_Fonts-Fonts-grey?logo=googlefonts&logoColor=%23ffffff&color=%234285F4)</a>
+
 
 
 ### Tools and Programs
-
-<a href="https://balsamiq.com/wireframes/" target="_blank">![Static Badge](https://img.shields.io/badge/Balsamiq-Wireframes-grey?logoColor=%23ffffff&color=%23CC0100)</a>
-<a href="https://canva.com/" target="_blank">![Static Badge](https://img.shields.io/badge/Canva-grey?logoColor=%23ffffff&color=%23CC0100)</a>
-
 
 <hr>
 <p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
@@ -252,7 +196,7 @@ Additional information on the deployment process can be found on the official [G
 
 
 <hr>
-<p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
+<p align="right"><a href="#moviequiz">Back To Top</a></p>
 
 ## Testing
 
@@ -266,11 +210,9 @@ This included regular debugging and testing using the Dev Tools as provided with
 [CSS Validation](https://jigsaw.w3.org/css-validator/)<br>
 ![CSS Validation](/documentation/images/CSS%20Validator%202.png)
 
-Several bugs appeared in the duration of the project:
-- Centering Carousel + took up too much space on desktop = adding white space on sides + CSS media query. 
-- Favicon not loading = moved to root directory.
-- Desktop view grid errors = deleted align-items-center.
-- Vid lengths too big = removed frameborder.
+Any Bugs
+-
+-
 
 <hr>
 <p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
@@ -282,9 +224,7 @@ Several bugs appeared in the duration of the project:
 Project and primary learning supplied by [Code Institute](https://codeinstitute.net/ie/)<br>
 Supplemental learning resources within the project:
 
-- 
-- [Bootstrap Docs](https://getbootstrap.com/docs/5.3)
-- [Gemini](https://gemini.google.com) as a learning and content creation tool, no code was directly used.
+- [Chat GPT](https://chatgpt.com/) as a learning and content creation tool, no code was directly used.
 
 All additional sources [research](/documentation/research.md).
 
@@ -293,14 +233,9 @@ All additional sources [research](/documentation/research.md).
 The additional [research](/documentation/research.md) is listed and can be found within the documentation folder of this repo.
 
 ### Media
-
-- Static badges for README documentation [Shields.io](https://shields.io/badges/static-badge) & [Simple Icons](https://simpleicons.org/)
-- Youtube (https://youtube.com/)
-- Canva (https://canva.com/)
+- 
 
 ### Acknowledgements
-
-- Mathew and Wai Yi Wong for contributing to my debugging process.
 
 <hr>
 <p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
