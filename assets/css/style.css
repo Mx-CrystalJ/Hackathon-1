@@ -28,6 +28,7 @@ h1 {
 }
 
 .text-color{
+    
     color: #F1F1F1;
 }
 
@@ -88,7 +89,7 @@ nav {
 }
 
 #welcome-container {
-    padding-top: 250px;
+    padding-top: 160px;
 }
  
 #quiz-container {
@@ -127,11 +128,16 @@ nav {
     /* Add margin between buttons */
 }
 
+#next-question-btn {
+position: relative;
+padding-left: 10px;
+}
+
 a {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-right: 25px;
+    
 }
 
 .answer-btn1 {
@@ -150,6 +156,14 @@ a {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.scores {
+    display: flex; 
+    justify-content: center;
+    gap: 20px; /* Adds space between the answers */ 
+     margin-top: 20px; 
+    }
+
 
 #github img {
     width: 10px;
