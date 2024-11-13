@@ -1,11 +1,27 @@
 // Quiz questions and answers structure
 const quizQuestions = [
     {
-      question: "", // Fill with your question
+      question: "How did Spider-Man get his powers?",
       answers: [
-        { text: "", isCorrect: true },  // Correct answer
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
+        { text: "Radioactive spider bite", isCorrect: true },  // Correct answer
+        { text: "Ketamine", isCorrect: false },
+        { text: "Steroid injection", isCorrect: false }
+      ]
+    },
+    {
+      question: "Who is the villain in the first Spider-Man movie?",
+      answers: [
+        { text: "Green Goblin", isCorrect: true },
+        { text: "Doctor Octopus", isCorrect: false },
+        { text: "Venom", isCorrect: false }
+      ]
+    },
+    {
+      question: "What is Spider-Man's real name?",
+      answers: [
+        { text: "Peter Parker", isCorrect: true },
+        { text: "Clark Kent", isCorrect: false },
+        { text: "Bruce Wayne", isCorrect: false }
       ]
     }
   ];
@@ -22,21 +38,26 @@ const quizQuestions = [
     
     const answerButtons = document.getElementById('answer-buttons');
     answerButtons.innerHTML = ''; // Clear previous answer buttons
-  
+    
     currentQuestion.answers.forEach((answer, index) => {
       const button = document.createElement('button');
       button.classList.add('answer-btn');
       button.textContent = answer.text;
-      button.onclick = () => checkAnswer(index);
+      button.onclick = () => checkAnswer(index, button); // Pass the button to disable it
       answerButtons.appendChild(button);
     });
   }
   
   // Function to check the selected answer
-  function checkAnswer(index) {
+  function checkAnswer(index, button) {
     const currentQuestion = quizQuestions[currentQuestionIndex];
     const selectedAnswer = currentQuestion.answers[index];
   
+    // Disable all buttons once an answer is selected
+    const allButtons = document.querySelectorAll('.answer-btn');
+    allButtons.forEach(btn => btn.disabled = true);
+    
+    // Provide feedback for the answer
     if (selectedAnswer.isCorrect) {
       score++;
       document.getElementById('result-message').textContent = "Correct!";
@@ -51,6 +72,13 @@ const quizQuestions = [
     
     // Show "Next Question" button
     document.getElementById('next-question-btn').style.display = 'block';
+    
+    // Optionally, change the style of the clicked button (e.g., highlight the correct/incorrect answer)
+    if (selectedAnswer.isCorrect) {
+      button.style.backgroundColor = 'green';
+    } else {
+      button.style.backgroundColor = 'red';
+    }
   }
   
   // Function to move to the next question
