@@ -29,15 +29,17 @@ p {
 
 /* ------------- General styles */
 .header img {
-    float: left;
+    left: 0px;
     display: inline-block;
     width: 50px;
     height: 50px;
+    position: relative;
 }
 
 .container-fluid {
     padding-left: 60px;
 }
+
 .header {
     position: fixed;
 }
@@ -59,11 +61,12 @@ nav {
     background-repeat: no-repeat;
 }
 
-.quiz-container {
+#quiz-container {
     background-image: url(/assets/images/10070310.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 .question-area {
@@ -71,14 +74,29 @@ nav {
     font-family: 'Sour Gummy';
 }
 
-#answer-buttons {
-
-} 
-
-.answer-btn {
-    background-color: black;
+.answer-btn, .answer-btn1 {
+    /* Common styles for both buttons */
+    background-color: white;
     font-size: medium;
     font-family: Roboto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px; /* Add margin between buttons */
+  }
+  
+  .answer-btn1 {
+    background-color: rgb(0, 0, 0);
+    color: white; /* Add text color for better visibility */
+    align-content: center;
+  }
+
+#next-question-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #github img {
@@ -88,10 +106,10 @@ nav {
 
 footer {
     position: absolute;
-    bottom: 0; 
-    width: 100%; 
-    height: 50px; 
-    /* Adjust as needed */ 
-    background-color: #F1F1F1; 
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    /* Adjust as needed */
+    background-color: #F1F1F1;
 }
 
