@@ -1,3 +1,11 @@
+const correctSound = new Audio('assets/audio/correct-answer.mp3');  // Sound for correct answers
+const incorrectSound = new Audio('assets/audio/incorrect-answer.mp3');  // Sound for incorrect answers
+const questionSound = new Audio('assets/audio/question-sound.mp3'); // Sound for question display
+
+// Preload sounds for faster playback
+correctSound.preload = "auto";
+incorrectSound.preload = "auto";
+
 // Quiz questions and answers structure
 const quizQuestions = [
   {
@@ -94,6 +102,8 @@ const quizQuestions = [
 let currentQuestionIndex = 0;
 let score = 0;
 let incorrectAnswers = 0;
+let timerInterval;
+let timeRemaining = 20; // 20 seconds for each question
 
 // Function to display the current question
 function displayQuestion() {
@@ -110,6 +120,34 @@ function displayQuestion() {
     button.onclick = () => checkAnswer(index, button); // Pass the button to disable it
     answerButtons.appendChild(button);
   });
+
+  // Start the timer when a new question is displayed
+  startTimer();
+}
+
+// Function to start the timer
+function startTimer() {
+  // Reset time remaining
+  timeRemaining = 20;
+  document.getElementById('timer').textContent = `Time Remaining: ${timeRemaining} seconds`;
+
+  // Clear any previous timer
+  if (timerInterval) {
+    clearInterval(timerInterval);
+  }
+
+  // Update the timer every second
+  timerInterval = setInterval(function() {
+    timeRemaining--; // Decrease the time by 1 second
+    document.getElementById('timer').textContent = `Time Remaining: ${timeRemaining} seconds`; // Update timer display
+
+    // When the timer reaches 0, stop the timer. 
+    if (timeRemaining <= 0) {
+      clearInterval(timerInterval); // Stop the timer
+      document.getElementById('result-message').textContent = "GAME OVER!";
+      document.getElementById('next-question-btn').style.display = 'block'; // Show "Next Question" button
+    }
+  }, 1000); // Update every second (1000 ms)
 }
 
 // Function to check the selected answer
@@ -125,9 +163,11 @@ function checkAnswer(index, button) {
   if (selectedAnswer.isCorrect) {
     score++;
     document.getElementById('result-message').textContent = "Correct!";
+    correctSound.play();  // Play sound for correct answer
   } else {
     incorrectAnswers++;
     document.getElementById('result-message').textContent = "Incorrect!";
+    incorrectSound.play();  // Play sound for incorrect answer
   }
 
   // Update the score display
