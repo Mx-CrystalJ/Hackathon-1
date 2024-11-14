@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/png" sizes="16x16" href="clapper-open.png">
+
     <!--Fonts-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
@@ -20,7 +22,7 @@
     <!--CSS Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Document</title>
+    <title>Movie Quizzz YCCC</title>
 </head>
 
 <body>
@@ -77,6 +79,21 @@
                 </div>
             </div>
         </div>
+
+        <!-- Results Area (Initially hidden) -->
+        <div id="results-area" style="display: none;">
+            <h2>Quiz Finished!</h2>
+            <p id="final-score">Your Score: 0</p>
+            <p id="correct-answers">Correct Answers: 0</p>
+            <p id="incorrect-answers">Incorrect Answers: 0</p>
+        </div>
+
+        <!-- Video Element with Autoplay and Loop -->
+        <video id="result-video" width="80%" controls autoplay loop>
+            <source src="assets/images/WhatsApp Video 2024-11-05 at 21.34.37_93b33fdb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
         <!-- Audio element is hidden, it will be controlled via JavaScript -->
         <audio id="question-sound" src="assets/audio/correct-answer.mp3" preload="auto"></audio>
         <audio id="question-sound" src="assets/audio/incorrect-answer.mp3" preload="auto"></audio>
