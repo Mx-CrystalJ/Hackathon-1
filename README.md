@@ -1,17 +1,17 @@
 # Movie Quiz
 
-![Movie Quiz - Project Banner](/assets/images/10070310.jpg)
+![Movie Quiz - Project Banner](/assets/documentation/Quizz%20by%20Quizz.cyy.png)
 
 
 <p align="center">
-| <a href="" target="_blank">Live Project</a> |
+| <a href="https://mx-crystalj.github.io/Hackathon-1/questions.html" target="_blank">Live Project</a> |
 </p>
 
 ## Introduction
 
-The Movie Quiz represents the first hackathon collaborative project given to us for the Code Institute Full Stack Software Developer Bootcamp. Us refers to the collaborators, Caprice, Cristian, Crystal and Yusuf 
+The Movie Quiz represents the first hackathon collaborative project given to us for the Code Institute Full Stack Software Developer Bootcamp. Us refers to the collaborators: Caprice, Cristian, Crystal and Yusuf.
 
-Live project: <a href="" target="_blank">Movie Quiz</a>
+Live project: <a href="https://mx-crystalj.github.io/Hackathon-1/questions.html" target="_blank">Movie Quiz</a>
 
 <h2 align="center" id="TOC">Table of Contents</h2>
 
@@ -37,7 +37,7 @@ Live project: <a href="" target="_blank">Movie Quiz</a>
   - [Libraries and Frameworks](#libraries-and-frameworks)
   - [Tools & Programs](#tools-and-programs)
 * [Development](#deployment)
-* [Testing](#testing)
+* [Any Bugs](#any-bugs)
 * [Credits](#credits)
   - [Code](#code)
   - [Content Research](#content-research)
@@ -57,15 +57,17 @@ A fun, interactive movie quiz game where players answer multiple-choice question
 - Answer Feedback: Immediate feedback displayed after each answer (correct or incorrect).
 - Score Tracking: Display the player’s score at the end of the quiz.
 - Timer (Optional): A countdown timer for each question to add a time challenge.
-- Mobile Responsiveness: The quiz will be fully responsive and work well on both mobile and desktop screens.
+- Mobile/iPad Responsiveness: The quiz will be fully responsive and work well on both mobile and desktop screens.
 
 
 ## UX Design
 
 ## User Stories
-
-
-
+~[#1](https://github.com/Mx-CrystalJ/Hackathon-1/issues/1)
+~[#2](https://github.com/Mx-CrystalJ/Hackathon-1/issues/2)
+~[#3](https://github.com/Mx-CrystalJ/Hackathon-1/issues/3)
+~[#9](https://github.com/Mx-CrystalJ/Hackathon-1/issues/9)
+~[#10](https://github.com/Mx-CrystalJ/Hackathon-1/issues/10)
 
 <hr>
 <p align="right"><a href="#moviequiz">Back To Top</a></p>
@@ -74,19 +76,12 @@ A fun, interactive movie quiz game where players answer multiple-choice question
 
 We stuck to a classic colour scheme on our end, mainly using black and white, as the main background were images we pulled from online.
 
-To ensure compliance to standards, the [Colour Contrast Checker](https://colourcontrast.cc/) (also available as extension on [Chrome Web Store](https://chromewebstore.google.com/detail/colour-contrast-checker/nmmjeclfkgjdomacpcflgdkgpphpmnfe)) was used.<br>
-Both the [WebAIM](https://webaim.org/resources/contrastchecker/) and the [Adobe](https://color.adobe.com/create/color-contrast-analyzer) color contrast tools were used to corroborate these results.
 
 ### Main Palette
 - White `#ffffff` `--white`
 - Black `#000000` `--black`
 
-[ColorContrastChecker](/documentation/images/Color%20Contrast%20Checker%201.png)
-[Adobe](/documentation/images/Color%20Contrast%20Checker%202.png)
-[WebAIM](/documentation/images/Color%20Contrast%20Checker%203.png)
-
-
-Due to the potential impact of color on mental health, additional research and feedback was found to ensure an appropriate selection was made for this project. Additional research in the documentation [research](/documentation/research.md).
+![Colours](/assets/documentation/Colors.png)
 
 <hr>
 <p align="right"><a href="#moviequiz">Back To Top</a></p>
@@ -96,7 +91,7 @@ Due to the potential impact of color on mental health, additional research and f
 When looking in Google Fonts I wanted to ensure a positive user experience whilst visiting the page in which they wuld be able to clearly see the sections and headings.<br>
 Two  fonts were selected for the project, and implemented via [Google Fonts](https://fonts.google.com) using a direct import code within the style.css file.
 
-[Sour Gummy] (https://fonts.google.com/specimen/Sour+Gummy) is a more fun font, to add some style to the pages
+[Sour-Gummy] (https://fonts.google.com/specimen/Sour+Gummy) is a more fun font, to add some style to the pages
 
 [Roboto] (https://fonts.google.com/specimen/Roboto) is the primary content font ensuring content looks good and seamless
 
@@ -141,7 +136,7 @@ The second image takes inspiration from the interior of a movie theatre, showing
 - Option to display the correct answer after each question.
 - Display the number of questions answered and remaining questions.
 - Show score after each question or at the end of the quiz.
--Time limit for answering each question.
+- Time limit for answering each question.
 - Display a countdown timer for added challenge.
 
 ### General Features
@@ -151,7 +146,9 @@ The criteria requested that we create and design an interactive Front-End web ap
 When coding the project, receiving feedback, the features and design changed from the original wireframes to be more interacctive.
 
 Adjustments:
-- added javascript to include features such as questions, scores and a timer.
+
+- Added javascript to include features such as questions, scores and a timer.
+- Removed images for questions and answers.
 
 #### Navigation and Carousel Section
 We chose to keep the navbar simple as it isn't a main feature of this project.
@@ -160,27 +157,47 @@ We chose to keep the navbar simple as it isn't a main feature of this project.
 
 We stuck to one colour for links and buttons based on the website background, sticking to either black or white for consistency.
 
+![Links and Buttons](/assets/documentation/Screenshot%202024-11-14%20143537.png)<br>
+
 <hr>
 <p align="right"><a href="#moviequiz">Back To Top</a></p>
 
 ### Responsive Design
 
+For an implementation that is responsive additional CSS + media queries were needed for presentation.
 
+Though it took some experimentation and troubleshooting, we were able to create a page that is fully responsive to modern standards.
+
+As a result of our debugging within Dev Tools and help from other students to identify and resolve responsiveness issues I believe I have a better understanding of how to use Bootstrap for future projects.
+
+[Am I Responsive](https://ui.dev/amiresponsive?url=https://mx-crystalj.github.io/Hackathon-1/index.html)<br>
+![Am I Responsive](/assets/documentation/Screenshot%202024-11-14%20142806.png)<br>
+![Mobile](/assets/documentation/Screenshot%202024-11-14%20143344.png)<br>
+![ipad Mini](/assets/documentation/Screenshot%202024-11-14%20143507.png)<br>
+![Dektop](/assets/documentation/Screenshot%202024-11-14%20143537.png)<br>
 
 <hr>
 <p align="right"><a href="#moviequiz">Back To Top</a></p>
 
-
-## Built With
-
 ### Technologies and Languages
+![Static Badge](https://img.shields.io/badge/HTML5-Language-grey?logo=html5&logoColor=%23ffffff&color=%23E34F26)
+![Static Badge](https://img.shields.io/badge/CSS3-Language-grey?logo=css3&logoColor=%23ffffff&color=%231572B6)
 
+<a href="https://git-scm.com/" target=_blank_>![Static Badge](https://img.shields.io/badge/Git-v2.46.2-grey?logo=git&logoColor=%23ffffff&color=%23F05032)</a>
+<a href="https://github.com/" target="_blank">![Static Badge](https://img.shields.io/badge/GitHub-Repo_Hosting-white?logo=github&logoColor=%23ffffff&color=%23181717)</a>
+<a href="https://www.gitpod.io/" target="_blank">![Static Badge](https://img.shields.io/badge/Gitpod-IDE-white?logo=gitpod&logoColor=%23ffffff&color=%23FFAE33)</a>
 
 ### Libraries and Frameworks
-
+<a href="https://getbootstrap.com/" target="_blank">![Static Badge](https://img.shields.io/badge/Bootstrap-v5.3.3-grey?logo=bootstrap&logoColor=%23ffffff&color=%237952B3)</a>
+<a href="https://favicon.io/emoji-favicons/" target="_blank">![Static Badge](https://img.shields.io/badge/Font_Awesome-Icons-grey?logo=fontawesome&logoColor=%23ffffff&color=%23538DD7)</a>
+<a href="https://fonts.google.com/" target="_blank">![Static Badge](https://img.shields.io/badge/Google_Fonts-Fonts-grey?logo=googlefonts&logoColor=%23ffffff&color=%234285F4)</a>
 
 
 ### Tools and Programs
+
+<a href="https://balsamiq.com/wireframes/" target="_blank">![Static Badge](https://img.shields.io/badge/Balsamiq-Wireframes-grey?logoColor=%23ffffff&color=%23CC0100)</a>
+<a href="https://canva.com/" target="_blank">![Static Badge](https://img.shields.io/badge/Canva-grey?logoColor=%23ffffff&color=%23CC0100)</a>
+
 
 <hr>
 <p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
@@ -209,26 +226,20 @@ Additional information on the deployment process can be found on the official [G
 <hr>
 <p align="right"><a href="#moviequiz">Back To Top</a></p>
 
-## Testing
 
-Testing and validation os the website was carried out throughout the course of the project.
-
-This included regular debugging and testing using the Dev Tools as provided within Chrome Browser.
-
-[HTML Validation](https://validator.w3.org/)<br>
-![HTML Validation](/documentation/images/HTML%20Validator%201.png)
-
-[CSS Validation](https://jigsaw.w3.org/css-validator/)<br>
-![CSS Validation](/documentation/images/CSS%20Validator%202.png)
-
-Any Bugs
-- 
--
+## Any Bugs
+- In mobile/tablet view the nav bar is not aligned.
+- The gif for the results page would not show.
+- Alignment, size, and padding issues.
 
 <hr>
 <p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
 
 ## Credits
+[Crystal](https://github.com/Mx-CrystalJ)
+[Caprice](https://github.com/CapriceHolford)
+[Cristian](https://github.com/YazdanTaheri)
+[Yusuf](https://github.com/YEGuzel)
 
 ### Code
 
@@ -237,16 +248,15 @@ Supplemental learning resources within the project:
 
 - [Chat GPT](https://chatgpt.com/) as a learning and content creation tool, no code was directly used.
 
-All additional sources [research](/documentation/research.md).
 
-### Content Research
-
-The additional [research](/documentation/research.md) is listed and can be found within the documentation folder of this repo.
 
 ### Media
-- 
+- Static badges for README documentation [Shields.io](https://shields.io/badges/static-badge) & [Simple Icons](https://simpleicons.org/)
+- Youtube (https://youtube.com/)
+- Canva (https://canva.com/)
 
 ### Acknowledgements
+- Mathew and John for contributing to my debugging process.
 
 <hr>
 <p align="right"><a href="#the-mental-mountain-hub">Back To Top</a></p>
