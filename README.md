@@ -132,6 +132,17 @@ The second image takes inspiration from the interior of a movie theatre, showing
 <p align="right"><a href="#moviequiz">Back To Top</a></p>
 
 ## Features
+- Introduction to the quiz and its purpose.
+- Option to start the quiz or learn more about the game.
+- Display multiple-choice questions about movies (e.g., movie trivia, actors, genres, etc.).
+- Randomized questions to keep the quiz fresh.
+- Time limit for answering each question
+- Immediate feedback on whether the user's answer is correct or incorrect.
+- Option to display the correct answer after each question.
+- Display the number of questions answered and remaining questions.
+- Show score after each question or at the end of the quiz.
+-Time limit for answering each question.
+- Display a countdown timer for added challenge.
 
 ### General Features
 
@@ -211,7 +222,7 @@ This included regular debugging and testing using the Dev Tools as provided with
 ![CSS Validation](/documentation/images/CSS%20Validator%202.png)
 
 Any Bugs
--
+- 
 -
 
 <hr>
