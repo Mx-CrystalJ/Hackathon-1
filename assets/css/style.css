@@ -38,9 +38,17 @@ p {
     color: #0e0e0e;
 }
 
+.img-size {
+    height: 25px;
+    width: 25px;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+}
+
 #start-quiz-btn {
     display: flex;
     justify-content: center;
+
 }
 
 /* ------------- General styles */
@@ -87,7 +95,7 @@ nav {
 }
 
 .welcome-container {
-    background-image: url(/assets/images/old-frame-4583939_1920.png);
+    background-image: url(../images/old-frame-4583939_1920.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +113,7 @@ nav {
 }
  
 #quiz-container {
-    background-image: url(/assets/images/10070310.jpg);
+    background-image: url(../images/10070310.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +142,7 @@ nav {
     font-family: Roboto;
     padding: 5px 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     margin: 10px;
     /* Add margin between buttons */
@@ -146,7 +154,10 @@ nav {
 
 .atext-size{
     font-size: large;
-    text-decoration: underline;
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .answer-btn1 {
@@ -155,7 +166,8 @@ nav {
     /* Add text color for better visibility */
     align-content: center;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 35px;
+    
 }
 
 .next-question-btn {
@@ -176,8 +188,11 @@ nav {
 }
 
 .scores {
+    color: hsl(319, 69%, 15%);
     font-size: 15px;
 }
+
+
 
 #github img {
     width: 30px;
@@ -206,6 +221,9 @@ ul {
 
 .olhowto {
     height: 100%;
+    background-color : hsl(319, 69%, 15%);
+    color: #F1F1F1;
+    
 }
 
 /* Tablet view (screens 820px wide and up) */
@@ -257,7 +275,7 @@ ul {
     }
 
     .scores {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -273,7 +291,7 @@ ul {
     }
 
     #start-quiz-btn {
-        padding: 15px 30px;
+        padding: 15px 20px;
         /* Larger button padding */
         font-size: 20px;
     }
