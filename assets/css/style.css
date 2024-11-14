@@ -67,8 +67,24 @@ nav {
     font-family: 'Sour Gummy';
 }
 
+#timer {
+    font-size: larger;
+    font-weight: bolder;
+    color: red;
+}
 
 /* --------- Quiz styles */
+.active {
+    background-color: rgb(0, 252, 0); 
+    border: none;
+    border-radius: 10px;
+}
+
+#result-message {
+    font-size: 2rem;
+    font-weight: bolder;
+    color:red;
+}
 
 .welcome-container {
     background-image: url(/assets/images/old-frame-4583939_1920.png);
