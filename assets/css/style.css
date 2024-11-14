@@ -20,7 +20,7 @@ main {
 body {}
 
 h1 {
-    font-size: xx-large;
+    font-size: 50px;
     font-family: 'Sour Gummy';
     text-align: center;
     color: #131212;
@@ -28,7 +28,6 @@ h1 {
 }
 
 .text-color{
-    
     color: #F1F1F1;
 }
 
@@ -80,16 +79,13 @@ nav {
 }
 
 
-#content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+#content 
 
 #welcome-container {
-    padding-top: 160px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
  
 #quiz-container {
@@ -98,7 +94,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    height: 100%;
+    height: 120%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +116,7 @@ nav {
     background-color: white;
     font-size: medium;
     font-family: Roboto;
-    padding: 10px 20px;
+    padding: 5px 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -128,16 +124,13 @@ nav {
     /* Add margin between buttons */
 }
 
-#next-question-btn {
-position: relative;
-padding-left: 10px;
+.answer-btn {
+    font-size: small;
 }
 
-a {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    
+.atext-size{
+    font-size: large;
+    text-decoration: underline;
 }
 
 .answer-btn1 {
@@ -145,52 +138,48 @@ a {
     color: white;
     /* Add text color for better visibility */
     align-content: center;
-    margin-left: 100px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-#next-question-btn {
-    padding: 10px 20px;
+.next-question-btn {
+    padding: 20px;
+    background-color: #F1F1F1;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    padding-left: 10px;
 }
 
-.scores {
+.score-area {
     display: flex; 
     justify-content: center;
     gap: 20px; /* Adds space between the answers */ 
-     margin-top: 20px; 
-    }
+    margin-top: 20px;
+}
 
+.scores {
+    font-size: 15px;
+}
 
 #github img {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 20px;
     /* Adjust as needed */
     background-color: #F1F1F1;
     text-align: center;
-    padding: 10px 0;
     list-style-type: none;
 }
 
 .footer1 {
-    bottom: 0;
-    width: 100%;
-    height: 20px;
-    /* Adjust as needed */
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 10px 0;
-    list-style-type: none;
+    
 }
 
 ul {
@@ -199,11 +188,36 @@ ul {
     justify-content: space-evenly;
 }
 
+.olhowto {
+    height: 100%;
+}
+
+/* Tablet view (screens 820px wide and up) */
+@media (min-width: 820px) {
+
+    #question {
+        font-size: 40px;
+    }
+
+    .answer-btn {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .next-question-btn {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
 /* Desktop view (screens 992px wide and up) */
 @media (min-width: 992px) {
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 80px;
         /* Larger heading text for desktops */
     }
 
@@ -214,18 +228,46 @@ ul {
     #start-quiz-btn {
         padding: 15px 30px;
         /* Larger button padding */
-        font-size: 1.2rem;
+        font-size: 20px;
+    }
+
+    #github img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .footatext {
+        font-size: large;
+    }
+
+    .scores {
+        font-size: 30px;
     }
 }
 
 @media screen and (min-width: 1200px) {
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 80px;
         /* Larger heading text for desktops */
     }
 
     p {
         font-size: 1.2rem;
+    }
+
+    #start-quiz-btn {
+        padding: 15px 30px;
+        /* Larger button padding */
+        font-size: 20px;
+    }
+
+    #github img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .footatext {
+        font-size: large;
     }
 }

@@ -54,7 +54,7 @@ const quizQuestions = [
     const selectedAnswer = currentQuestion.answers[index];
   
     // Disable all buttons once an answer is selected
-    const allButtons = document.querySelectorAll('.answer-btn');
+    const allButtons = document.querySelectorAll('answer-btn');
     allButtons.forEach(btn => btn.disabled = true);
     
     // Provide feedback for the answer
