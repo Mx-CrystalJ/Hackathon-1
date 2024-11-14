@@ -27,7 +27,7 @@ h1 {
 
 }
 
-.text-color{
+.text-color {
     color: #F1F1F1;
 }
 
@@ -75,7 +75,7 @@ nav {
 
 /* --------- Quiz styles */
 .active {
-    background-color: rgb(0, 252, 0); 
+    background-color: rgb(0, 252, 0);
     border: none;
     border-radius: 10px;
 }
@@ -83,7 +83,7 @@ nav {
 #result-message {
     font-size: 2rem;
     font-weight: bolder;
-    color:red;
+    color: red;
 }
 
 .welcome-container {
@@ -95,15 +95,13 @@ nav {
 }
 
 
-#content 
-
-#welcome-container {
+#content #welcome-container {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
- 
+
 #quiz-container {
     background-image: url(/assets/images/10070310.jpg);
     background-size: cover;
@@ -144,7 +142,7 @@ nav {
     font-size: small;
 }
 
-.atext-size{
+.atext-size {
     font-size: large;
     text-decoration: underline;
 }
@@ -169,14 +167,119 @@ nav {
 }
 
 .score-area {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    gap: 20px; /* Adds space between the answers */ 
+    gap: 20px;
+    /* Adds space between the answers */
     margin-top: 20px;
 }
 
 .scores {
     font-size: 15px;
+}
+
+/* Results Area Style */
+#results-area {
+    background-color: #f8f8f8;
+    /* Light gray background */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding around the content */
+    text-align: center;
+    /* Center the text */
+    width: 80%;
+    /* 80% width of the container */
+    max-width: 600px;
+    /* Max width of 600px */
+    margin: 30px auto;
+    /* Center the area horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for a floating effect */
+}
+
+/* Heading for the results */
+#results-area h2 {
+    font-size: 2rem;
+    /* Large font for the heading */
+    color: #2e8b57;
+    /* Green color for the title */
+    margin-bottom: 20px;
+    /* Space between title and content */
+}
+
+/* Score text */
+#final-score,
+#correct-answers,
+#incorrect-answers {
+    font-size: 1.2rem;
+    /* Standard font size */
+    margin: 10px 0;
+    /* Space between each line */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+/* Score color */
+#final-score {
+    font-size: 1.5rem;
+    color: rgb(230, 20, 230);
+}
+
+#correct-answers {
+    color: #28a745;
+}
+
+#incorrect-answers {
+    color: #dc3545;
+}
+
+/* Button Style */
+#results-area button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Button Hover Effect */
+#results-area button:hover {
+    background-color: #0056b3;
+}
+
+/* Button Active Effect */
+#results-area button:active {
+    transform: scale(0.98);
+}
+
+/* Button Focus Effect */
+#results-area button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+#result-video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Center and resize the GIF */
+.gif-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.gif-container img {
+    width: 30%;
+    height: auto;
 }
 
 #github img {
@@ -194,9 +297,7 @@ footer {
     list-style-type: none;
 }
 
-.footer1 {
-    
-}
+.footer1 {}
 
 ul {
     list-style-type: none;
@@ -251,7 +352,7 @@ ul {
         width: 50px;
         height: 50px;
     }
-    
+
     .footatext {
         font-size: large;
     }
@@ -282,7 +383,7 @@ ul {
         width: 50px;
         height: 50px;
     }
-    
+
     .footatext {
         font-size: large;
     }
